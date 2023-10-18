@@ -32,7 +32,7 @@ public class AdminService {
         Admin save = adminRepository.save(admin);
         return new ApiResponse("Saved", true, save);
     }
-    //admin
+
 
     public ApiResponse add(AdminDto adminDto) {
         Admin admin=new Admin();
