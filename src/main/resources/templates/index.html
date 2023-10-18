@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" th:href="@{/assets/css/bootstrap-5.3.2-dist/css/bootstrap.css}">
+  <link rel="stylesheet" th:href="@{/assets/bootstrap-icons1.11.1/font/bootstrap-icons.css}">
+  <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-2 fw-medium mt-0">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4" href="index.html">22-Maktab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="align-items: center;">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 nav-underline" style="align-items: center;">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Bosh sahifa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/AboutPage.html">Biz haqimizda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/CoursesPage.html">Kurslar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/NewsPage.html">Yangiliklar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="views/EventsPage.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tadbirlar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="views/EventsPage.html">Tadbirlar</a></li>
+                <li><a class="dropdown-item" href="views/MeetingPage.html">Online tadbirlar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/BooksPage.html">Kitoblar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-globe fs-4"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" language='uzbek'>UZ</a></li>
+                <li><a class="dropdown-item" href="#" language='russian'>RU</a></li>
+                <li><a class="dropdown-item" href="#" language='english'>EN</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a class="btn btn-outline-success" style="align-items: center; display: flex; height: 6%;"
+            href="views/SignIn.html">Tizimga kirish</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class=" contener">
+    <img src="C:\Users\Marco\Desktop\schoolweb22\src\main\resources\media\pictures\school22.jpg" alt="" >
+  </div>
+  <div class="container">
+    <section class="home">
+      <div class="row" style="align-items: center;">
+        <div class="col">
+          <h1>22-umumiy O'rta <br> ta'lim maktabi </h1>
+          <p>22-Maktab 1980-yilda qurilgan va 2020 yilda qayta ta'mirlangan. 1957-yildan boshlab arab tili maktabi
+            sifatida tasdiqlangan</p>
+          <a href="./views/AboutPage.html" class="btn btn-secondary"><i></i>Download free E-book</a>
+        </div>
+      </div>
+    </section>
+    <div class="title text-center">
+      <p class="mt-5">START LEARNING CODING LANGUAGES</p>
+      <h1 class="mb-2">Build Your Dream TODAY</h1>
+    </div>
+    <div class="row " style="justify-content: space-between;">
+      <div class="card col-4 border-0">
+        <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2019/12/home-5-image-box-01.png"
+          alt="home-5-image-box-01">
+        <div class="d-grid gap-2">
+          <h5 class="card-title" style="text-align: center;">Arab tili</h5>
+          <p class="card-text" style="text-align: center;">
+            Bizning maktab 1957-yildan 2013yilgacha arab tiliga iqtisoslashtirilgan .</p>
+          <a href="#" class="btn btn-success ">Start Now</a>
+        </div>
+      </div>
+      <div class="card col-4 border-0">
+        <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2019/12/home-5-image-box-01.png"
+          alt="home-5-image-box-01">
+        <div class="d-grid gap-2">
+          <h5 class="card-title" style="text-align: center;">O'g'il bolalar maktabi</h5>
+          <p class="card-text" style="text-align: center;">
+            1957-1961 yilgacha faqat o'g'il bolalar ta'lim olgan</p>
+          <a href="#" class="btn btn-success">Start Now</a>
+        </div>
+      </div>
+      <div class="card col-4 border-0">
+        <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2019/12/home-5-image-box-01.png"
+          alt="home-5-image-box-01">
+        <div class="d-grid gap-2">
+          <h5 class="card-title" style="text-align: center;">Informatika</h5>
+          <p class="card-text" style="text-align: center;">
+            2021-yildan boshlab Ixtisoslashtirilgan Davlat Umum Ta'lim Maktabi </p>
+          <a href="#" class="btn btn-success">Start Now</a>
+        </div>
+      </div>
+    </div>
+    <section href="#section2">
+      <div class="row first-div">
+        <div class="col"><img src="media/pictures/homeImage1.png" alt=""></div>
+        <div class="col">
+          <p>DREAM WITH MAXCOACH</p>
+          <h1>Construct A Stunning <br> Career Perspective</h1>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Direktorlar
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>1935-1940 yillarda Axmadova Sharofat <br>
+                    1940-1943 yillarda Musayeva Saida <br>
+                    1943-1947 yillarda Samadbekov Karim <br>
+                    1947- 1948 yillarda Abdulov Abdulxay <br>
+                    1948-2002 yillarda Xoshimov Xoshimjon <br>
+                    2002-2003 yillarda Ubaydullayeva Gulnora <br>
+                    2004-2005 yillarda Nuriddinov Toxirxo’ja <br>
+                    2005-2011 yillarda Fatxullayev Alisher <br>
+                    2012-2018 yillarda Toshxodjayeva Nargiza <br>
+                    2018- yildan hozirgacha Ganixadjayeva Muhayyo Saidovna
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Mashhur insonlar
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p> -Saidkamol Umarov-O’zbekiston Xalq artisti, <br> -Sherzod Shermatov - Axborot texnologiyalari va
+                    kamunikatsiyalarini rivojlantirish vaziri, <br> -Matyoqub Matchanov-O’zbekistonda xizmat ko’rsatgan
+                    artist, <br>
+                    -Sobir Rahimov –General-mayor, Sovet Ittifoqi qahramoni, <br> -Erkin Vohidov –O’zbekiston Qahramoni
+                    va
+                    shoiri
+                    1955 yil. Medal bilan bitirgan</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Chet el delegatsiyalari
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p> 1957 yildan 22 maktabda arab tili o’qitilishi chet ellarda qiziqish uyg’otib, chet el
+                    delegatsiyalari
+                    kela boshlad:Arab davlatlari,GDR,Fransiya,Angliya,AQSh,Ispaniya,Turkiya,Eron,
+                    Pokiston,Hindiston,Yaponiya,SSSR Respublikalaridan maorif delegatsiyalari arab tili darslarini
+                    o’qitilishini kuzatdilar.1980-yil</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="row bg-light title text-center p-5 mt-4" style="width: 100%;">
+    <div class="col">
+      <h1>1.704</h1>
+      <p>O'quvhilar soni</p>
+    </div>
+    <div class="col">
+      <h1>100</h1>
+      <p>Bitiruvchilar</p>
+    </div>
+    <div class="col">
+      <h1>85</h1>
+      <p>OTMga kirganlar</p>
+    </div>
+    <div class="col">
+      <h1>25</h1>
+      <p>IELTS olganlar</p>
+    </div>
+  </div>
+  <div class="container">
+
+    <h1 class="title text-center pb-5">Maktabimizdagi Qo'shimcha darslar</h1>
+    <div class="row">
+      <div class="col-4">
+        <h2 style="text-align: center;">Ingliz tili</h2>
+        <div class="card border-0">
+          <img src="./media/pictures/homeImage1.png" alt="" class="card-img-top">
+          <div class="car-body p-4">
+            <div class="d-flex">
+              <p class="pe-5">
+                Ustoz: Saidova Zebiniso
+              </p>
+              <p>
+                <i class="bi bi-person"></i>
+                25 qatnashuvchilar
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <h2 style="text-align: center;">Informatika</h2>
+        <div class="card border-0">
+          <img src="./media/pictures/homeImage1.png" alt="" class="card-img-top">
+          <div class="car-body p-4">
+            <div class="d-flex">
+              <p class="pe-5">
+                Ustoz:Athamova Umida
+              </p>
+              <p>
+                <i class="bi bi-person"></i>
+                15 qatnashuvchilar
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <h2 style="text-align: center;">Matematika</h2>
+        <div class="card border-0">
+          <img src="./media/pictures/homeImage1.png" alt="" class="card-img-top">
+          <div class="car-body p-4">
+            <div class="d-flex">
+              <p class="pe-5">
+                Ustoz:Athamova Umida
+              </p>
+              <p>
+                <i class="bi bi-person"></i>
+                15 qatnashuvchilar
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
+      </div>
+      <div>
+        <a href="https://t.me/schoool22" class="me-4 link-secondary fs-3 "><i class="bi bi-telegram"></i></a>
+        <a href="https://www.facebook.com/22maktab/" class="me-4 link-secondary fs-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/invites/contact/?i=huyqoij6twn2&utm_content=spn4ji5"
+          class="me-4 link-secondary fs-3"><i class="bi bi-instagram"></i></a>
+
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4"><i class="bi bi-building me-3 text-secondary"></i>22-Maktab</h6>
+            <p>Maktabimiz haqidagi barcha ma'lumotlarni oldingiz degan umiddaman.Siz bizning web site mizdan
+              foydalanganingiz uchun katta raxmat!</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Ma'lumotlar</h6>
+            <p><a href="index.html" class="text-reset">Bizning sahifa</a></p>
+            <p><a href="views/AboutPage.html" class="text-reset">Biz haqimizda</a></p>
+            <p><a href="views/CoursesPage.html" class="text-reset">Kurslar</a></p>
+            <p><a href="views/NewsPage.html" class="text-reset">Yangiliklar</a></p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Ma'lumotlar</h6>
+            <p><a href="views/EventsPage.html" class="text-reset">Tadbirlar</a></p>
+            <p><a href="views/BooksPage.html" class="text-reset">Kitoblar</a></p>
+            <p><a href="views/MeetingPage.html" class="text-reset">Online tadbirlar</a></p>
+            <p><a href="views/SignIn.html" class="text-reset">Tizimga kirish</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Bog'lanish</h6>
+            <p><i class="bi bi-geo-alt-fill me-3 text-secondary"></i>86MX+W5R, 26 Shimoliy Olmazor Str.,
+              Тоshkent 100019, Узбекистан</p>
+            <p><i class="bi bi-envelope me-3 text-secondary"></i>info@example.com</p>
+            <p><i class="bi bi-telephone me-3 text-secondary"></i> +998712273527</p>
+            <p><i class="bi bi-telephone-fill me-3 text-secondary"></i>+998712273527</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      <p>
+        <span class="fw-bold fs-6">Asoschilar: </span>
+        <a href="https://t.me/khatamov_oo7">Xatamov Abdulmajid</a>
+        |
+        <a href="https://t.me/m_al1yy">Zokirov Habibulloh</a>
+        |
+        <a href="https://t.me/MR_Xashmedbobo">Sadriddinov Xushnudbek</a>
+        |
+        <a href="https://t.me/muzaffardev">Mirzakarimov Muzaffar</a>
+      </p>
+      <p>© 2023</p>
+    </div>
+  </footer>
+  <script src="css/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
